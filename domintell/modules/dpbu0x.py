@@ -124,7 +124,7 @@ class DPBU04Module(GenericDPBU0xModule):
     COMMAND_CODE = 'BU4'
 
     def number_of_channels(self):
-        return 4
+        return 8
 
     def _on_message(self, message):
         if isinstance(message, domintell.DPBU04StatusMessage):
