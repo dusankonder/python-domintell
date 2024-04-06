@@ -33,7 +33,7 @@ class DPBU04StatusMessage(DPBU02StatusMessage):
     DPBU04 module status
     """
     def __init__(self, address=None):
-        GenericDIOStatusMessage.__init__(self, 4)
+        GenericDIOStatusMessage.__init__(self, 8)
         self.moduleType = BU4_COMMAND_CODE
 
 class DPBU06StatusMessage(DPBU04StatusMessage):
